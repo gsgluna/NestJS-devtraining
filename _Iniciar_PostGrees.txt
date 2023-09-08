@@ -1,0 +1,16 @@
+INICIAR POSTGRES
+
+
+1. Abrir CMD;
+2. Ir até a pasta 
+
+C:\Program Files\PostgreSQL\16rc1\bin
+
+3. Digitar 
+
+pg_ctl -D "C:\Program Files\PostgreSQL\16rc1\data" start
+
+
+PARAR POSTGRES
+
+pg_ctl -D "C:\Program Files\PostgreSQL\16rc1\data" stop
