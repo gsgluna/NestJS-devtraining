@@ -11,7 +11,7 @@ export class CreateCustomerDto {
     readonly sex: string;
 
     @IsNumber()
-    readonly age: number;
+    readonly userage: number;
 
     @IsString()
     readonly city: string;
