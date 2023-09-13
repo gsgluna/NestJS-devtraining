@@ -15,7 +15,7 @@ export class Customer {
     sex: string;
 
     @Column()
-    age: number;
+    userage: number;
 
     @Column()
     city: string;
