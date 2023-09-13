@@ -8,11 +8,11 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   imports: [customersModule, TypeOrmModule.forRoot({
 
     type: 'postgres',
-    host: 'zuyubase.cuuyb9musp1v.us-east-1.rds.amazonaws.com',
-    port: 5432,
-    username: 'postgres',
-    password: 'shar3z123',
-    database: 'zuyudatabase',
+    host: process.env.DB_HOST,
+    port: parseInt(process.env.DB_PORT),
+    username: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
     ssl: true,
     extra: {
       ssl: {
