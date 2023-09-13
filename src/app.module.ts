@@ -8,14 +8,13 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   imports: [customersModule, TypeOrmModule.forRoot({
 
     type: 'postgres',
-    host: 'localhost',
-    port: 5432,
+    host: 'containers-us-west-165.railway.app',
+    port: 6422,
     username: 'postgres',
-    password: 'postgres',
-    database: 'postgres',
+    password: 'tsA9ZP9noKeRlmYJnFUr',
+    database: 'railway',
     autoLoadEntities: true,
     synchronize: true,
-
   })],
   controllers: [AppController],
   providers: [AppService],
