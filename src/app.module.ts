@@ -13,6 +13,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     username: 'postgres',
     password: 'shar3z123',
     database: 'zuyudatabase',
+    ssl: true,
+    extra: {
+      ssl: {
+        rejectUnauthorized: false,
+      },
+    },
     autoLoadEntities: true,
     synchronize: true
   })],
