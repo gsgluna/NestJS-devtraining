@@ -8,14 +8,11 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   imports: [customersModule, TypeOrmModule.forRoot({
 
     type: 'postgres',
-    host: 'containers-us-west-165.railway.app',
-    port: 6422,
+    host: 'zuyubase.cuuyb9musp1v.us-east-1.rds.amazonaws.com',
+    port: 5432,
     username: 'postgres',
-    password: 'tsA9ZP9noKeRlmYJnFUr',
-    database: 'railway',
-    autoLoadEntities: true,
-    synchronize: true,
-
+    password: 'shar3z123',
+    database: 'zuyudatabase'
   })],
   controllers: [AppController],
   providers: [AppService],
