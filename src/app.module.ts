@@ -14,7 +14,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     password: 'shar3z123',
     database: 'zuyudatabase',
     autoLoadEntities: true,
-    synchronize: false,
+    synchronize: true,
     ssl: true,
     extra: {
       ssl: {
