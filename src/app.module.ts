@@ -13,6 +13,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     username: 'postgres',
     password: 'shar3z123',
     database: 'zuyudatabase',
+    entities: ['dist/**/*.entity.js'],
+    migrations: ['dist/migrations/*.js'],
     ssl: true,
     extra: {
       ssl: {
